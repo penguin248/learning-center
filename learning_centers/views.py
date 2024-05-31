@@ -7,6 +7,6 @@ def index(request):
 
 def topics(request):
     """Show all topics"""
-    topics = Topic.objects.order_by('sate_added')
+    topics = Topic.objects.order_by('date_added')
     context = {'topics': topics}
     return render(request, 'learning_centers/topics.html', context)
