@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'learning_centers',
     'users',
     
+    #Third part apps
+    'bootstrap4',
+    
     #Default Django apps
     'django.contrib.admin',
     'django.contrib.auth',
