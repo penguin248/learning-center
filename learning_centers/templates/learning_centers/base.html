@@ -2,21 +2,43 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+    />
     <title>Learning Center</title>
 
-    {% bootstrap_css %}
-    {% bootstrap_javascript jquery='full' %}
-</head>
-<body>
-
+    {% bootstrap_css %} {% bootstrap_javascript jquery='full' %}
+  </head>
+  <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
-        <a class="navbar-brand" href="{% url 'learning_centers:index %}">Learning Center</a>
+      <a class="navbar-brand" href="{% url 'learning_centers:index %}"
+        >Learning Center</a
+      >
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navabar-toggler-icon"></span></button>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navabar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'learning_centers:topics' %}"
+              >Topics</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
-    
-</body>
+  </body>
 </html>
