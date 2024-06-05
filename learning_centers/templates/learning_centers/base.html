@@ -1,14 +1,16 @@
-<p>
-    <a href="{% url 'learning_centers:index' %}">Learning Center</a> -
-    <a href="{% url 'learning_centers:topics' %}">Topics</a> -
-    {% if user.is_authenticated %}
-        Hello, {{ user.username }}
-        <a href="{% url 'users:logout' %}">Log out</a>
-    {% else %}
-        <a href="{% url 'users:register' %}">Register</a> -
-        <a href="{% url 'users:login' %}">Log in</a>
-    {% endif %}
+{% load bootstrap4 %}
 
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Learning Center</title>
 
-{% block content %}{% endblock content %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+</head>
+<body>
+    
+</body>
+</html>
